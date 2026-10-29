@@ -193,3 +193,4 @@ Regras validadas:
 O ciclo **vermelho → verde → refactor** está registrado no histórico de commits: os testes de cada regra foram commitados antes da implementação correspondente.
 
 [Ver histórico de commits](../../commits/main)
+# 3-atividade-TSW
