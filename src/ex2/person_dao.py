@@ -10,13 +10,13 @@ class PersonDAO:
     ERRO_SEM_EMAIL = "A pessoa deve ter ao menos um email associado"
     ERRO_EMAIL_FORMATO = "O email deve estar no formato ____@____.____"
 
-    def __init__(self) -> None:
-        self.pessoas: list[Person] = []
-
     IDADE_MINIMA = 1
     IDADE_MAXIMA = 200
 
     _FORMATO_EMAIL = re.compile(r"[^@\s]+@[^@\s]+\.[^@\s]+")
+
+    def __init__(self) -> None:
+        self.pessoas: list[Person] = []
 
     def isValidToInclude(self, p: Person) -> list[str]:
         erros: list[str] = []
